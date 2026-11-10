@@ -134,7 +134,7 @@ con los RF que cubre y una línea "Hecho cuando:" verificable. Usa checkboxes.
 **Implementación:**
 
 ```text
-Implementa SOLO la tarea T2 de specs/001-habits-mvp/tasks.md, siguiendo
+Implementa la tareas T2 de specs/001-habits-mvp/tasks.md, siguiendo
 plan.md y la constitución. Escribe primero los tests, luego el código.
 Ejecuta pytest -q y muéstrame el resultado. Al terminar: marca T2 en tasks.md,
 indica qué RF cubre y PÁRATE. No empieces T3.
