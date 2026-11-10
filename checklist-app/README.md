@@ -10,7 +10,9 @@ Persistencia en un único archivo JSON. Sin autenticación.
 checklist-app/
 ├── AGENTS.md
 ├── CLAUDE.md
-├── notas.md
+├── README.md
+├── images/
+│   └── SDD.txt
 ├── docs/
 │   └── CONSTITUTION.md
 ├── specs/
@@ -24,27 +26,7 @@ checklist-app/
         ├── dev.md
         └── qa.md
 ```
-
-## Comandos
-
-### Backend
-
-```bash
-cd arquitectura-backend
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
+![SDD](./images/SDD.png)
 ## Prompts SDD
 
 ### 1. Especificación
