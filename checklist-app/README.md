@@ -4,6 +4,10 @@ Aplicación web simple de listas de verificación. Cada checklist tiene un títu
 
 Persistencia en un único archivo JSON. Sin autenticación.
 
+El objetivo es aprender SDD (Spec-Driven Development) y temas relacionados con IA: skills, agentes y el resto del flujo de trabajo con asistentes de código.
+
+Los skills y los agentes están listos para cualquier harness. La fuente de verdad es `skills/` y `AGENTS.md`. Claude Code es el ejemplo de integración: `CLAUDE.md` referencia `AGENTS.md`, los archivos de `.claude/agents/` solo apuntan al rol descrito ahí, y `.claude/skills/arquitectura-backend` es un symlink a `skills/backend`.
+
 ## Estructura del proyecto
 
 ```
@@ -12,7 +16,7 @@ checklist-app/
 ├── CLAUDE.md
 ├── README.md
 ├── images/
-│   └── SDD.txt
+│   └── SDD.png
 ├── docs/
 │   └── CONSTITUTION.md
 ├── specs/
@@ -22,9 +26,11 @@ checklist-app/
 │   └── backend/
 │       └── SKILL.md
 └── .claude/
-    └── agents/
-        ├── dev.md
-        └── qa.md
+    ├── agents/
+    │   ├── dev.md
+    │   └── qa.md
+    └── skills/
+        └── arquitectura-backend -> ../../skills/backend
 ```
 ![SDD](./images/SDD.png)
 ## Prompts SDD
